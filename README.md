@@ -18,12 +18,28 @@ var imageAspectRatio = require("image-aspect-ratio");
 imageAspectRatio.calculate(srcWidth, srcHeight, maxWidth, maxHeight);
 
 ```
-### example
+### example 01 : Calculation with Rectangle image with large width than height
 ```javascript
 var imageAspectRatio = require("image-aspect-ratio");
 
-imageAspectRatio.calculate(srcWidth, srcHeight, maxWidth, maxHeight);
-// >> "cWst77snJtVris"
+imageAspectRatio.calculate(1250, 580, 200, 200);
+// >> {"width":200,"height":92.8}
+```
+
+### example 02 : Calculation with Rectangle image with large height than width
+```javascript
+var imageAspectRatio = require("image-aspect-ratio");
+
+imageAspectRatio.calculate(580, 1250, 200, 200);
+// >> {"width":92.8,"height":200}
+```
+
+### example 03 : Calculation with Square image
+```javascript
+var imageAspectRatio = require("image-aspect-ratio");
+
+imageAspectRatio.calculate(1250, 1250, 200, 200);
+// >> {"width":200,"height":200}
 ```
 
 ## API
