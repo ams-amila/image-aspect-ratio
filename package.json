@@ -1,0 +1,36 @@
+{
+  "name": "image-aspect-ratio",
+  "version": "1.0.0",
+  "description": "Image aspect ratio is a utility module which provides straight-forward, way to calculate aspect ratio of a image to fit within a given box.",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ams-amila/image-aspect-ratio.git"
+  },
+  "keywords": [
+    "aspect ratio",
+    "image resize",
+    "image aspect",
+    "fit image to box",
+    "javascript",
+    "image aspect ratio",
+    "ratio",
+    "node",
+    "module"
+  ],
+  "author": "Amila Madusanka <ams.amila@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ams-amila/image-aspect-ratio/issues"
+  },
+  "homepage": "https://github.com/ams-amila/image-aspect-ratio#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1"
+  }
+}
